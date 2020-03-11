@@ -1,0 +1,23 @@
+{
+  "name": "discordd1",
+  "version": "1.0.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "8.x",
+    "npm": "*"
+  },
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "googleapis": "^39.2.0",
+    "pg": "^7.18.2",
+    "webshot": "0.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sarafannikov/discordd"
+  }
+}
