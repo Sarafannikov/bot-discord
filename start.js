@@ -8,7 +8,6 @@ client.login(BOT_KEY);
 client.on("message",(message) => {
     client.user.setGame('!help для информации');
     function screen(server, words) {
-        console.log('2');
         if (words[2] != undefined) {
             URL = "https://www.leagueofgraphs.com/summoner/" + server + "/" + words[1] + '+' + words[2]
         } else {
@@ -64,13 +63,11 @@ client.on("message",(message) => {
     
     if (message.content.startsWith("!ru")){
         words = message.content.split(" ");
-        console.log('1');
         name = screen('ru', words);  
         setTimeout(sendImage, 11000, name);  
     }
     if (message.content.startsWith("!euw")){
         words = message.content.split(" ");
-        console.log('1.5');
         name = screen('euw', words);    
         setTimeout(sendImage, 11000, name);
     }
